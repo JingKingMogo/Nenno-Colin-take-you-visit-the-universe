@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="target-densitydpi=device-dpi" />
+<title>dialogue2</title>
+	<style type="text/css">
+		html {
+			background: url("pic/universebackground.jpeg") no-repeat center top;
+			position: relative;
+			overflow: hidden;
+		}
+		.d1{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 15%;
+		}
+		.Nenno{
+			width: 300px;
+		}
+		.d2{
+			position:absolute;
+			float: left;
+			width: 380px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 35%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+		}
+		#p1,#p2,#p3,#p4{
+			text-transform: uppercase;
+			font-weight: 580;
+			color: #2AB7CA;
+			font-size: 25px;
+			letter-spacing: 0.25em;
+			margin-bottom: 0;
+			margin-top: 0;
+			text-shadow: 2px 2px 0 #FED766, 3px 3px 0;
+			cursor: pointer;
+		}
+		.d3,.d4,.d5{
+			position:absolute;
+			float: left;
+			width: 380px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 35%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+			display: none;
+		}
+		
+		.d9{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 65%;
+		}
+		
+		.i1,.i2,.i3{
+			position: absolute;
+			margin-top: 0%;
+			margin-left: 70%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.i1:hover{
+			transform: scale(1.3);
+		}
+		
+		.i2:hover{
+			transform: scale(1.3);
+		}
+		
+		.i3:hover{
+			transform: scale(1.3);
+		}
+		
+		.right_arrow{
+			position: absolute;
+			margin-left: 50%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.right_arrow:hover{
+			transform: scale(1.3);
+		}
+		.Colin{
+			width: 300px;
+		}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".i1").click(function(){
+				$(".d2").hide();
+			});
+			$(".i1").click(function(){
+				$(".d3").show();
+			});
+		});
+		$(document).ready(function(){
+			$(".i2").click(function(){
+				$(".d3").hide();
+			});
+			$(".i2").click(function(){
+				$(".d4").show();
+			});
+		});
+		$(document).ready(function(){
+			$(".i3").click(function(){
+				$(".d4").hide();
+			});
+			$(".i3").click(function(){
+				$(".d5").show();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="d1"><img src="pic/Nenno(带名字和箭头).png" alt="" class="Nenno" /></div>
+	<div class="d2">
+		<p id="p1">Colin：除了地球、月球外，Nenno你还知道有哪些天体在围绕着太阳运动吗？？</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i1" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d3">
+		<p id="p2">Nenno：我知道！今天看的绘本上有说呢！首先有八大行星，除了地球外，还有水星、金星、火星、木星、土星、天王星和海王星。</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i2" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d4">
+		<p id="p3">Nenno：绘本上还说除了八大行星，还有矮行星、小天体（包括小行星、流星、彗星等）组成的天体都围绕太阳转，它们以太阳为中心组成了一个天体系统叫做太阳系。</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i3" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d5">
+		<p id="p4">Colin：说的太棒了！现在我来主要介绍一下太阳系中的八大行星和恒星太阳！</p>
+		<a href="solar system.html"><img src="pic/右箭头right arrow.png" alt="" class="right_arrow" onMouseMove="play()" onMouseOut="pause()" /></a>
+	</div>
+	<div class="d9"><img src="pic/Colin(带名字和箭头).png" alt="" class="Colin" /></div>
+	<audio controls="controls" hidden="hidden" id="audio" src="voice/water_voice.wav"> 
+	</audio>
+	<audio autoplay="autoplay" loop="loop" src="voice/backgroundmusic1.wav">
+   </audio>
+	<script type="text/javascript">
+		function play(){
+			document.getElementById("audio").play();
+		}
+		function pause(){
+			document.getElementById("audio").src="voice/water_voice.wav";
+			document.getElementById("audio").pause();
+		}
+	</script>	
+</body>
+</html>

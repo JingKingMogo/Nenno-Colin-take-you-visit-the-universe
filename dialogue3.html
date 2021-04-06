@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="target-densitydpi=device-dpi" />
+<title>dialogue3</title>
+	<style type="text/css">
+		html {
+			background: url("pic/universebackground.jpeg") no-repeat center top;
+			position: relative;
+			overflow: hidden;
+		}
+		.d1{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 15%;
+		}
+		.Nenno{
+			width: 300px;
+		}
+		.d2{
+			position:absolute;
+			float: left;
+			width: 380px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 35%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+		}
+		#p1,#p2,#p3,#p4,#p5{
+			text-transform: uppercase;
+			font-weight: 580;
+			color: #2AB7CA;
+			font-size: 25px;
+			letter-spacing: 0.25em;
+			margin-bottom: 0;
+			margin-top: 0;
+			text-shadow: 2px 2px 0 #FED766, 3px 3px 0;
+			cursor: pointer;
+		}
+		.d3,.d4,.d5,.d6{
+			position:absolute;
+			float: left;
+			width: 380px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 35%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+			display: none;
+		}
+		
+		.d9{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 65%;
+		}
+		
+		.i1,.i2,.i3,.i4{
+			position: absolute;
+			margin-top: 0%;
+			margin-left: 70%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.i1:hover{
+			transform: scale(1.3);
+		}
+		
+		.i2:hover{
+			transform: scale(1.3);
+		}
+		
+		.i3:hover{
+			transform: scale(1.3);
+		}
+		
+		.i4:hover{
+			transform: scale(1.3);
+		}
+		
+		.right_arrow{
+			position: absolute;
+			margin-left: 50%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.right_arrow:hover{
+			transform: scale(1.3);
+		}
+		.Colin{
+			width: 300px;
+		}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".i1").click(function(){
+				$(".d2").hide();
+			});
+			$(".i1").click(function(){
+				$(".d3").show();
+			});
+		});
+		$(document).ready(function(){
+			$(".i2").click(function(){
+				$(".d3").hide();
+			});
+			$(".i2").click(function(){
+				$(".d4").show();
+			});
+		});
+		$(document).ready(function(){
+			$(".i3").click(function(){
+				$(".d4").hide();
+			});
+			$(".i3").click(function(){
+				$(".d5").show();
+			});
+		});
+		$(document).ready(function(){
+			$(".i4").click(function(){
+				$(".d5").hide();
+			});
+			$(".i4").click(function(){
+				$(".d6").show();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="d1"><img src="pic/Nenno(带名字和箭头).png" alt="" class="Nenno" /></div>
+	<div class="d2">
+		<p id="p1">Colin：太阳虽然是太阳系里唯一发光的恒星， 但是太阳系在宇宙中并不是唯一的。</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i1" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d3">
+		<p id="p2">Colin：天空中的星星大多数也是和太阳一样发光发热的恒星，它们有的也会组成类似太阳系一样的天体系统，太阳系和众多的恒星一起组成的一个恒星集团，被人们称为银河系。</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i2" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d4">
+		<p id="p3">Nenno：那银河系就是宇宙吗？还是说银河系外还有别的星系呢？</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i3" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d5">
+		<p id="p4">Colin：这个问题问得好！银河系当然不是整个宇宙了，银河系以外还有类似银河系一样庞大的恒星集团。</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i4" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d6">
+		<p id="p5">Colin：比如：仙女座星系、猎犬座星系等，目前人类已经发现了超过100亿个河外星系呢。我带你了解一下银河系和其他几个河外星系吧！</p>
+		<a href="milky way.html"><img src="pic/右箭头right arrow.png" alt="" class="right_arrow" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d9"><img src="pic/Colin(带名字和箭头).png" alt="" class="Colin" /></div>
+	<audio controls="controls" hidden="hidden" id="audio" src="voice/water_voice.wav"> 
+	</audio>
+	<audio autoplay="autoplay" loop="loop" src="voice/backgroundmusic1.wav">
+   </audio>
+	<script type="text/javascript">
+		function play(){
+			document.getElementById("audio").play();
+		}
+		function pause(){
+			document.getElementById("audio").src="voice/water_voice.wav";
+			document.getElementById("audio").pause();
+		}
+	</script>	
+</body>
+</html>
