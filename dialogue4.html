@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="target-densitydpi=device-dpi" />
+<title>dialogue4</title>
+	<style type="text/css">
+		html {
+			background: url("pic/universebackground.jpeg") no-repeat left top;
+			background-size: cover;
+			position: absolute;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+		}
+		.d1{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 8%;
+		}
+		.Nenno{
+			width: 350px;
+		}
+		.d2{
+			position:absolute;
+			float: left;
+			width: 450px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 33%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+		}
+		#p1,#p2,#p3,#p4,#p5{
+			cursor: pointer;
+		}
+		.d3,.d4,.d5,.d6{
+			position:absolute;
+			float: left;
+			width: 450px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 33%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+			display: none;
+		}
+		
+		.d9{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 70%;
+		}
+		.right_arrow{
+			position: absolute;
+			margin-left: 50%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.right_arrow:hover{
+			transform: scale(1.3);
+		}
+		.Colin{
+			width: 350px;
+		}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#p1").click(function(){
+				$(".d2").hide();
+			});
+			$("#p1").click(function(){
+				$(".d3").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p2").click(function(){
+				$(".d3").hide();
+			});
+			$("#p2").click(function(){
+				$(".d4").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p3").click(function(){
+				$(".d4").hide();
+			});
+			$("#p3").click(function(){
+				$(".d5").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p4").click(function(){
+				$(".d5").hide();
+			});
+			$("#p4").click(function(){
+				$(".d6").show();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="d1"><img src="pic/Nenno(带名字和箭头).png" alt="" class="Nenno" /></div>
+	<div class="d2">
+		<p id="p1">Nenno：哇！这些星系看起来可真美呢，Colin！那究竟宇宙的边缘在哪里呢？</p>
+	</div>
+	<div class="d3">
+		<p id="p2">Colin：这个嘛...其实人类对于整个宇宙的大小还尚不清楚，但可以测量可观测宇宙的大小，估计其直径为930亿光年（小知识点：光的传播速度是30万千米/秒，光年是光在一年中所走的距离，用于计量恒星间距离的单位）。</p>
+	</div>
+	<div class="d4">
+		<p id="p3">Colin：而且科学家还发现了，宇宙正处于膨胀之中，每时每刻宇宙中都有许多恒星诞生与消亡，可以说我们的宇宙是十分有活力的哦！那么讲到这里，Nenno，宇宙探秘感觉怎么样？</p>
+	</div>
+	<div class="d5">
+		<p id="p4">Nenno：太令人惊叹了！我以后要努力学习天文学！</p>
+	</div>
+	<div class="d6">
+		<p id="p5">Colin：那我现在再来考考你刚才介绍过的知识吧！</p>
+		<a href="Q&A2.html"><img src="pic/右箭头right arrow.png" alt="" class="right_arrow" /></a>
+	</div>
+	<div class="d9"><img src="pic/Colin(带名字和箭头).png" alt="" class="Colin" /></div>
+</body>
+</html>

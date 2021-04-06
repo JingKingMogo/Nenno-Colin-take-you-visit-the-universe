@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Earth and Moon</title>
+	<link rel="stylesheet" type="text/css" href="css/Earth and Moon.css">
+</head>
+<script type="text/javascript">
+		function ShowEarth(){
+            var einfo=document.getElementById("earth-info");
+			einfo.style.display="block";
+		}
+		function HideEarth(){
+            var einfo1=document.getElementById("earth-info");
+			einfo1.style.display="none";
+		}
+		function ShowMoon(){
+            var minfo=document.getElementById("moon-info");
+			minfo.style.display="block";
+		}
+	    function HideMoon(){
+            var minfo1=document.getElementById("moon-info");
+			minfo1.style.display="none";
+		}
+		
+</script>
+<body>
+	<earth id="earth" onclick="ShowEarth()"></earth>
+
+	<aside class="profile-card" id="earth-info" >
+  <header>
+    <!-- here’s the avatar -->
+    <a>
+      <img src="pic/earth.png">
+    </a>
+    <!-- the username -->
+    <h1>About Earth</h1>
+    <!-- and role or location -->
+    <h2>Knowledge</h2>
+  </header>
+	<!-- bit of a bio; who are you? -->
+  <div class="profile-bio">
+    <p><li>地球很大，而且地球有水和空气，还有各种各样丰富的资源。</li><li>地球是目前宇宙中人类已知存在生命的唯一天体，是我们人类非常珍贵的家园。</li><li>地球现在的年龄可是有45.5亿年。</li><li>地球是太阳系八大行星之一，按离太阳由近及远的次序排为第三颗，也是太阳系中直径、质量和密度最大的类地行星。</li><li>地球自西向东自转，同时围绕太阳公转, 它有一个天然卫星--月球，二者组成一个天体系统--地月系统。</li></p>
+  </div>
+  <div class="col-sm-3">
+	  <a class="btn btn-xs orange" onclick="HideEarth()">收起介绍</a>
+</div>
+</aside>
+	 
+	
+	
+	<moon id="moon" onclick="ShowMoon()"></moon>
+	<aside class="profile-card" id="moon-info" >
+  <header>
+    <!-- here’s the avatar -->
+    <a>
+      <img src="pic/moon.png">
+    </a>
+    <!-- the username -->
+    <h1>About Moon</h1>
+    <!-- and role or location -->
+    <h2>Knowledge</h2>
+  </header>
+	<!-- bit of a bio; who are you? -->
+  <div class="profile-bio">
+    <p><li>月球是地球唯一的天然卫星，并且是太阳系中第五大的卫星。</li><li>月球的直径是地球的四分之一，质量是地球的八十分之一，引力大约是地球的六分之一。</li><li>月球表面布满了由陨石撞击形成的环形山。</li><li>月球的自转与公转同步(潮汐锁定)，因此始终以同一面朝向着地球。</li><li>月球是第一个人类曾经登陆过的地外星球。</li></p>
+  </div>
+  <div class="col-sm-3">
+	  <a class="btn btn-xs orange" onclick="HideMoon()">收起介绍</a>
+</div>
+</aside>
+	<div class="cc1"><a href="Q&A1.html" id="Next"><img src="pic/右箭头right arrow.png" width="180px" height="140px" class="right_arrow" /></a></div>
+</body>
+</html>

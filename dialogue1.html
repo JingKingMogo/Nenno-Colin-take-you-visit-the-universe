@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="target-densitydpi=device-dpi" />
+<title>dialogue1</title>
+	<style type="text/css">
+		html {
+			background: url("pic/universebackground.jpeg") no-repeat left top;
+			background-size: cover;
+			position: absolute;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+		}
+		.d1{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 8%;
+		}
+		.Nenno{
+			width: 350px;
+		}
+		.d2{
+			position:absolute;
+			float: left;
+			width: 450px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 33%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+		}
+		#p1,#p2,#p3,#p4,#p5,#p6,#p7{
+			cursor: pointer;
+		}
+		.d3,.d4,.d5,.d6,.d7,.d8{
+			position:absolute;
+			float: left;
+			width: 450px;
+			height: 350px;
+			margin-top: 8%;
+			margin-left: 33%;
+			background-color: #fff4d4;
+			border: #e8c58e solid 8px;
+			border-radius: 90px 90px 0 0;
+			text-align: justify;
+			padding-top: 5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-size: 25px;
+			font-weight: bold;
+			color: black;
+			display: none;
+		}
+		
+		.d9{
+			position: absolute;
+			float: left;
+			width: 400px;
+			margin-top: 18%;
+			margin-left: 70%;
+		}
+		.right_arrow{
+			position: absolute;
+			margin-left: 50%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.right_arrow:hover{
+			transform: scale(1.3);
+		}
+		.Colin{
+			width: 350px;
+		}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#p1").click(function(){
+				$(".d2").hide();
+			});
+			$("#p1").click(function(){
+				$(".d3").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p2").click(function(){
+				$(".d3").hide();
+			});
+			$("#p2").click(function(){
+				$(".d4").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p3").click(function(){
+				$(".d4").hide();
+			});
+			$("#p3").click(function(){
+				$(".d5").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p4").click(function(){
+				$(".d5").hide();
+			});
+			$("#p4").click(function(){
+				$(".d6").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p5").click(function(){
+				$(".d6").hide();
+			});
+			$("#p5").click(function(){
+				$(".d7").show();
+			});
+		});
+		$(document).ready(function(){
+			$("#p6").click(function(){
+				$(".d7").hide();
+			});
+			$("#p6").click(function(){
+				$(".d8").show();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="d1"><img src="pic/Nenno(带名字和箭头).png" alt="" class="Nenno" /></div>
+	<div class="d2">
+		<p id="p1">Colin：你知道你生活的星球叫什么名字吗？</p>
+	</div>
+	<div class="d3">
+		<p id="p2">Nenno：这个当然知道，我们生活在地球上，那可是一个很漂亮的地方呢。</p>
+	</div>
+	<div class="d4">
+		<p id="p3">Colin：你对你生活的地球了解吗？</p>
+	</div>
+	<div class="d5">
+		<p id="p4">Nenno：我觉得不是很了解...绘本上可没有详细说...</p>
+	</div>
+	<div class="d6">
+		<p id="p5">Colin：好吧...你知道地球唯一的天然卫星是什么吗？</p>
+	</div>
+	<div class="d7">
+		<p id="p6">Nenno：这个你可考不倒我，是月球，我小时候可还非常希望可以去又圆又亮的月亮上旅游呢。Colin，所以月球和太阳一样，会自己发光吗？</p>
+	</div>
+	<div class="d8">
+		<p id="p7">Colin：月球不是恒星哦，跟太阳不一样，是不会发光的，你看到的月亮之所以会发光，是因为它会反射太阳百分之七的光到地球上。我先来给你具体介绍一下地球和月球吧！</p>
+		<a href="Earth and Moon.html"><img src="pic/右箭头right arrow.png" alt="" class="right_arrow" /></a>
+	</div>
+	<div class="d9"><img src="pic/Colin(带名字和箭头).png" alt="" class="Colin" /></div>
+</body>
+</html>
