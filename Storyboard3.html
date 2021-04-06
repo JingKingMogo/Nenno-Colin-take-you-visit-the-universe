@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="target-densitydpi=device-dpi" />
+<title>Storyboard3</title>
+	<style type="text/css">
+		html{
+			background: url("pic/分镜3总图.jpg") no-repeat center top;
+			position: relative;
+			overflow: hidden;
+		}
+		.d1{
+			position:absolute;
+			margin-top: 2%;
+			margin-left: 39%;
+			width: 320px;
+			height: 40px;
+			text-align: justify;
+			color:#272320;
+			line-height: 1.75em;
+			text-transform: uppercase;
+			font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			font-weight: 580;
+			font-size: 18px;
+			letter-spacing: 0.25em;
+		}
+		.d2,.d3,.d4{
+			position:absolute;
+			margin-top: 2%;
+			margin-left: 39%;
+			width: 320px;
+			height: 40px;
+			text-align: justify;
+			display: none;		
+			color: #272320;
+			line-height: 1.75em;
+			text-transform: uppercase;
+			font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			font-weight: 580;
+			font-size: 18px;
+			letter-spacing: 0.25em;
+		}
+		.i1,.i2,.i3{
+			position: absolute;
+			margin-top: -6%;
+			margin-left: 70%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.i1:hover{
+			transform: scale(1.3);
+		}
+		
+		.i2:hover{
+			transform: scale(1.3);
+		}
+		
+		.i3:hover{
+			transform: scale(1.3);
+		}
+		.right_arrow{
+			position: absolute;
+			margin-top: 0%;
+			margin-left: 48%;
+			cursor: pointer;
+			transition: all 0.6s;
+		}
+		.right_arrow:hover{
+			transform: scale(1.3);
+		}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".i1").click(function(){
+				$(".d1").hide();
+			});
+			$(".i1").click(function(){
+				$(".d2").show();
+			});
+		});
+		$(document).ready(function(){
+			$(".i2").click(function(){
+				$(".d2").hide();
+			});
+			$(".i2").click(function(){
+				$(".d3").show();
+			});
+		});
+		$(document).ready(function(){
+			$(".i3").click(function(){
+				$(".d3").hide();
+			});
+			$(".i3").click(function(){
+				$(".d4").show();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="d1">
+		<p id="p1">Nenno觉得有些刺眼，以为已经是早上了。她睁开眼睛，却发觉自己在一个奇妙的空间里，旁边摆满了各种大小不一的投影仪。</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i1" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d2">
+		<p id="p2">“你好呀，Nenno。”<br>Nenno转过头，发现长得像小外星人Colin的生物在对着自己打招呼，Nenno吓了一跳，小小的眼睛中充满着疑惑。</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i2" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d3">
+		<p id="p3">“你是第1001个看这本绘本十分入迷的孩子，我作为书中的导读小外星人Colin，决定邀请你一起探索更多的宇宙奥秘，亲自为你讲述宇宙里面到底有什么天体，宇宙到底有多大！来吧，Nenno！”</p>
+		<a href="#"><img src="pic/arrow_word_forward_right.png" alt="" class="i3" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<div class="d4">
+		<p id="p4">小外星人Colin打开了旁边的投影仪，和Nenno一起开启了宇宙探秘......</p>
+		<a href="dialogue1.html"><img src="pic/右箭头right arrow.png" alt="" class="right_arrow" onMouseMove="play()" onMouseOut="pause()"  /></a>
+	</div>
+	<audio controls="controls" hidden="hidden" id="audio" src="voice/water_voice.wav"> 
+	</audio>
+	<script type="text/javascript">
+		function play(){
+			document.getElementById("audio").play();
+		}
+		function pause(){
+			document.getElementById("audio").src="voice/water_voice.wav";
+			document.getElementById("audio").pause();
+		}
+	</script>	
+
+</body>
+</html>

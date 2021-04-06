@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Q & A 1 </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"><link rel="stylesheet" href="css/style3.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+  <body>
+    <div id="container">
+      <h1>测一测</h1>
+      
+		<div id="kitty"><img src="pic/kitty.png" width="100px" height="100px"/></div>
+      <div id="content">
+        <h3 id="question"></h3>
+        <div id="choices"></div>
+        <p>
+          <button id="submit" type="button" class="btn btn-warning" onMouseMove="play()" onMouseOut="pause()"></button>
+        </p>
+        <p id="score"></p>
+        <p>加油！希望你们可以获得自己满意的成绩 :) </p>
+      </div>
+    </div>
+	  	<a href="dialogue2.html"><img src="pic/右箭头right arrow.png" class="right_arrow" alt="" onMouseMove="play()" onMouseOut="pause()" /></a>
+	  
+	  <audio controls="controls" hidden="hidden" id="audio" src="voice/water_voice.wav"> 
+	</audio>
+	<script type="text/javascript">
+		function play(){
+			document.getElementById("audio").play();
+		}
+		function pause(){
+			document.getElementById("audio").src="voice/water_voice.wav";
+			document.getElementById("audio").pause();
+		}
+	</script>
+	  
+  </body>
+<!-- partial -->
+  <script  src="js/script2.js"></script>
+
+</body>
+</html>
