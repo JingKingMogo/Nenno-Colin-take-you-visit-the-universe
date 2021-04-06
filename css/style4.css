@@ -1,0 +1,165 @@
+html, body, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    background-color: #fff4d4;
+    line-height:1.2;
+    color: #e8c58e;
+}
+#question{
+	color: #BA8835;
+	font-family: 微软雅黑;
+	font-weight: bold;
+	font-size: 20px;
+}
+#form{
+	color: #BA8835;
+	font-family: 微软雅黑;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.jumbotron {
+    background-color:#fff4d4 !important;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+/*end of default style resetting*/
+
+h1 {
+  font-size: 120px;
+  font-family: 微软雅黑;
+}
+
+.ui-widget-header {
+    background-image: none !important;
+    background-color: #f4decb !important; 
+}
+
+label{
+  display: inline;
+}  
+
+h3, #next {
+  text-align: center;
+  display: inline-block;
+  border-radius: 10%;
+}
+
+#result {
+  font-family: 微软雅黑;
+  font-weight: bold;
+  font-size: 2em;
+  color: #BA8835;
+}
+
+input[name="option"] {
+  float:left;
+  
+}
+
+#form div{
+  margin:auto;
+  max-width: 205px;
+}
+
+#progressbar {
+  float: none;
+  margin: auto;
+  margin-top: 20px;
+   
+  width: 50%;
+ }
+
+#container {
+  text-align: center;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em;
+    background-color: #e8c58e;
+    text-decoration: none !important; 
+    color: white !important;
+} 
+body{
+  text-align: center;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  /*height: 100%;*/
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+  -webkit-transition: width .6s ease;
+       -o-transition: width .6s ease;
+          transition: width .6s ease;
+}
+#start{
+	background-color: #e8c58e;
+	border-color: #e8c58e;
+}
+#next{
+	cursor: pointer;
+}
+#astronaut1{
+	position: absolute;
+	top:18%;
+	left: 70%;
+}
+#astronaut{
+	position: absolute;
+	top:18%;
+	left: 22%;
+}
+.right_arrow{
+    cursor: pointer;
+	transition: all 0.6s;
+}
+.right_arrow:hover{
+	transform: scale(1.5);
+}

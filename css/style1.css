@@ -1,0 +1,291 @@
+html{
+	background-size: cover;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+body {
+  background-color: #24252a;
+}
+
+h1 {
+  text-align: center;
+  font-family: Raleway;
+  margin: 40px 0 0 0;
+  color: #fff;
+}
+
+.orbit-container {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  height: 800px;
+  top: 40px;
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 100%;
+  border: solid 3px rgba(137, 196, 244, 0.1);
+  transition: .2s;
+}
+
+#sun {
+  position: absolute;
+  top: calc(320px - 40px);
+  left: calc(50% - 40.2px);
+  width: 86.4340px;
+  height: 86.4340px;
+  background: url("../xq/太阳Sun.png") no-repeat center center;
+  transition: .3s;
+}
+
+#mercury-orbit {
+  top: 245px;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 150px;
+  -webkit-animation: spin-right 1.2s linear infinite;
+  animation: spin-right 1.2s linear infinite;
+}
+
+#mercury {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  top: 74px;
+  left: -4px;
+  border-radius: 100%;
+  background: url("../xq/水星Mercury.png") no-repeat center center;
+} 
+
+#venus-orbit {
+  width: 225px;
+  height: 225px;
+  top: 206px;
+  left: calc(50% - 112.5px);
+  -webkit-animation: spin-right 3.08s linear infinite;
+  animation: spin-right 3.08s linear infinite;
+}
+
+#venus {
+  position: absolute;
+  width: 7.5px;
+  height: 7.5px;
+  top: 100px;
+  left: -5px;
+  border-radius: 100%;
+  background: url("../xq/金星Venus.png") no-repeat center center;
+}
+
+#earth-orbit {
+  width: 300px;
+  height: 300px;
+  top: 170px;
+  left: calc(50% - 150px);
+  -webkit-animation: spin-right 5s linear infinite;
+  animation: spin-right 5s linear infinite;
+}
+
+#earth {
+  position: absolute;
+  width: 7.9175px;
+  height: 7.9175px;
+  top: 105px;
+  border-radius: 100%;
+  background: url("../xq/地球Earth.png") no-repeat center center;
+}
+
+#mars-orbit {
+  width: 375px;
+  height: 375px;
+  top: 135px;
+  left: calc(50% - 187.5px);
+  -webkit-animation: spin-right 9.4s linear infinite;
+  animation: spin-right 9.4s linear infinite;
+}
+
+#mars {
+  position: absolute;
+  top: 120px;
+  left: 9px;
+  width: 4.2123px;
+  height: 4.2123px;
+  border-radius: 100%;
+  background: url("../xq/火星Mars.png") no-repeat center center;
+}
+
+#jupiter-orbit {
+  width: 450px;
+  height: 450px;
+  top: 98px;
+  left: calc(50% - 225px);
+  -webkit-animation: spin-right 60s linear infinite;
+  animation: spin-right 60s linear infinite;
+}
+
+#jupiter {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 145px;
+  border-radius: 100%;
+  background: url("../xq/木星Jupiter.png") no-repeat center center;
+}
+
+#saturn-orbit {
+  width: 525px;
+  height: 525px;
+  top: 62px;
+  left: calc(50% - 262.5px);
+  -webkit-animation: spin-right 145s linear infinite;
+  animation: spin-right 145s linear infinite;
+}
+
+#saturn,
+#saturn-rings{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 145px;
+  left: 15px;
+  border-radius: 100%;
+  background: url("../xq/土星Saturn.png") no-repeat center center;
+}
+
+#saturn-rings {
+  height: 30px;
+  left: 15px;
+  top: 138px;
+  background: rgba(255, 236, 179,0.25)
+}
+
+#uranus-orbit {
+  width: 600px;
+  height: 600px;
+  top: 25px;
+  left: calc(50% - 300px);
+  -webkit-animation: spin-right 420s linear infinite;
+  animation: spin-right 420s linear infinite;
+}
+
+#uranus {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 220px;
+  border-radius: 100%;
+  background: url("../xq/天王星Uranus.png") no-repeat center center;
+}
+
+#neptune-orbit {
+  width: 675px;
+  height: 675px;
+  top: -10px;
+  left: calc(50% - 337.5px);
+  -webkit-animation: spin-right 825s linear infinite;
+  animation: spin-right 825s linear infinite;
+}
+
+#neptune {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 270px;
+  left: 0;
+  border-radius: 100%;
+  background: url("../xq/海王星Neptune.png") no-repeat center center;
+  -webkit-animation: spin-right 990s linear infinite;
+  animation: spin-right 990s linear infinite;
+}
+
+#planet-list {
+  margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+  width: 1350px;
+  display: flex;
+  list-style: none;
+  font-family: Raleway;
+  color: white;
+  text-align: justify;
+}
+.sun{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.mercury{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.venus{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.earth{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.mars{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.jupiter{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.saturn{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.uranus{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+.neptune{
+	text-align: center;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.right_arrow{
+	position: absolute;
+	margin-top: -28%;
+	margin-left: 80%;
+    cursor: pointer;
+	transition: all 0.6s;
+}
+.right_arrow:hover{
+	transform: scale(1.3);
+}
+
