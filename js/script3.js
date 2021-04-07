@@ -5,16 +5,16 @@ function QuizQuestion(question, choices, correctAnswer){
 }
   
 var allQuestions = [
-  new QuizQuestion("下面哪一个是地球唯一的卫星",["月球", "火星", "木星", "天然卫星"],0),
-  new QuizQuestion("下面哪一个星球是第一个人类曾经登陆过的地外星球",["火星", "月球", "土星","木星"],1),
-  new QuizQuestion("目前宇宙中人类已知存在生命的唯一天体是什么",[ "月球", "地球", "太阳", "火星"],1),
-  new QuizQuestion("地球现在的年龄可是有多少亿年",["40.5", "45.5", "50.5", "55.5"],1),
-  new QuizQuestion("太阳系中直径、质量和密度最大的类地行星是什么",["月球", "火星","木星","地球" ],3),
-  new QuizQuestion("下面哪一个星球是第一个人类曾经登陆过的地外星球",["火星", "月球", "土星","木星"],1),
-  new QuizQuestion("下面哪一个是地球唯一的卫星",["月球", "火星", "木星", "天然卫星"],0),
-  new QuizQuestion("下面哪一个是地球唯一的卫星",["月球", "火星", "木星", "天然卫星"],0),
-  new QuizQuestion("太阳系中直径、质量和密度最大的类地行星是什么",["月球", "火星","木星","地球" ],3),
-  new QuizQuestion("下面哪一个星球是第一个人类曾经登陆过的地外星球",["火星", "月球", "土星","木星"],1),
+  new QuizQuestion("下面哪一个是太阳系的中心天体",["太阳", "火星", "地球", "月球"],0),
+  new QuizQuestion("下面哪一个行星是八大行星中最小的行星",["火星", "水星", "土星","木星"],1),
+  new QuizQuestion("下面哪一个行星距离太阳最近",[ "金星", "水星", "地球", "火星"],1),
+  new QuizQuestion("下面哪一个行星是地球的姊妹星",["火星", "金星", "水星", "木星"],1),
+  new QuizQuestion("下面哪一个行星是太阳系中最热的行星",["水星", "火星","木星","金星" ],3),
+  new QuizQuestion("下面哪一个行星被称为“红色星球",["金星", "火星", "土星","木星"],1),
+  new QuizQuestion("下面哪一个行星是太阳系中最大的一颗行星",["木星", "火星", "水星", "地球"],0),
+  new QuizQuestion("下面哪一个行星有七个美丽的光环",["土星", "火星", "木星", "金星"],0),
+  new QuizQuestion("下面哪一个行星是第一颗使用望远镜发现的行星",["金星", "火星","木星","天王星" ],3),
+  new QuizQuestion("下面哪一个行星是已知太阳系中离太阳最远的大行星",["火星", "海王星", "土星","木星"],1),
   /*
   new QuizQuestion("What has a tail but no body?",["A human", "A coin", "A cloud"],1),
   new QuizQuestion("What word in the English language is always spelled incorrectly?",["It's possible to spell anything right as long as you learn it", "Shakespeare", "Onomatopoeia", "Incorrectly"],2),
